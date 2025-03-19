@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> simple form </title>
+</head>
+<body>
+    <form>
+        <h1> ADD STUDENT </h1>
+        <form action="action_page.php" method="POST">
+            <table border="1" cellpadding="20" cellspacing="5" width="60%">
+                <tr> 
+                    <th> Question </th>
+                    <th> Answer </th>
+                <tr>
+                    <td> Name: </td>
+                    <td> <input type="text" name="name" placeholder="Enter First Name"> </td>
+                    <td> <input type="text" name="name" placeholder="Enter Last Name"> </td>
+                </tr>
+                <tr>
+                    <td> Address:</td>
+                    <td> <input type="text" name="name" placeholder="Enter City"> </td>
+                </tr>
+                <tr>
+                    <td> Provinces: </td>
+                    <td>
+                        <select name="country">
+                            <option value="">SELECT PROVINCE</option>
+                            <option value="PM">Pampanga</option>
+                            <option value="AUR">Aurora</option>
+                            <option value="BT">Bataan</option>
+                            <option value="BC">Bulacan</option>
+                            <option value="NE">Nueva Ecija</option>
+                            <option value="TL">Tarlac</option>
+                            <option value="ZB">Zambales</option>
+                        </select>
+                        <input type="text" name="zip code" placeholder="Enter Zip Code"> </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        <button type="submit"> save </button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </td>    
+                </tr>
+            </table>
+        </form>
+</body>
+</html>
+
+
